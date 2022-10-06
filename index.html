@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@200;400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/245431f389.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/ExchangeRateApp/main.css">
+    <title>ExchangeRateApp</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <h1>Exchange Rate App</h1>
+        <p>Check current exchange rates!</p>
+
+        <div class="app-body">
+
+            <div class="section-left">
+                <input type="number" class="amount1" value="1">
+                <select id="currency1">
+                    <option value="PLN" selected>PLN</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GPB</option>
+                    <option value="EUR">EUR</option>
+                    <option value="CHF">CHF</option>
+                </select>
+            </div>
+
+            <button class="swap">
+                <i class="fas fa-retweet"></i>
+            </button>
+
+            <div class="section-right">
+                <input type="number" class="amount2" disabled>
+                <select id="currency2">
+                    <option value="PLN">PLN</option>
+                    <option value="USD" selected>USD</option>
+                    <option value="GBP">GPB</option>
+                    <option value="EUR">EUR</option>
+                    <option value="CHF">CHF</option>
+                </select>
+            </div>
+
+
+
+
+        </div>
+        <p class="rate-info"></p>
+
+    </div>
+
+    <script src="/ExchangeRateApp/script.js"></script>
+</body>
+
+</html>
